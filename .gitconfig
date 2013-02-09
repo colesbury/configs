@@ -1,0 +1,37 @@
+[user]
+  name = Sam Gross
+  email = colesbury@gmail.com
+
+[core]
+  editor = vim
+  autocrlf = input
+  excludesfile = ".gitignore"
+
+[alias]
+  st = status
+  ci = commit
+  cm = commit
+  br = branch
+  co = checkout
+  df = diff
+  dw = diff --word-diff=color
+  d2 = diff --cached
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cred(%ai) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  lgf = log --follow
+  logf = log --follow
+  logp = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  diff2 = diff --cached
+  discard = checkout --
+  unstage = reset HEAD
+  dt = difftool --dir-diff
+
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+
