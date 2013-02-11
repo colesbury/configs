@@ -25,4 +25,12 @@ filetype plugin indent on
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Don't expandtab in Makefiles
+au BufRead,BufNewFile Makefile* set noexpandtab
+
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+
 set paste
+set mouse=a
