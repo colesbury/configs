@@ -1,6 +1,7 @@
 
 # General aliases
 alias l="ls -l"
+alias serve="python -m SimpleHTTPServer 8888"
 
 # Mac specific
 export CLICOLOR=1 # Enable colors in ls
