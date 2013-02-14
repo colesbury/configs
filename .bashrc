@@ -14,4 +14,6 @@ fi
 
 export PATH=$PATH:/Users/sgross/Projects/play-1.2.5:/usr/local/share/npm/bin
 
-
+if [ -f ~/.bash_local ]; then
+  source ~/.bash_local
+fi

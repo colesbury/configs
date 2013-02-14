@@ -4,6 +4,11 @@ cp -i .bashrc ~
 cp -i .bash_profile ~
 cp -i .gitconfig ~
 
+# create SSH key
+if [ ! -f ~/.ssh/id_dsa.pub ]; then
+  ssh-keygen -t dsa
+fi
+
 # setup vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
