@@ -15,7 +15,7 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 if [ ! -d ~/.vim/bundle/vim-sensible ]; then
-  git clone git://github.com/altercation/vim-sensible.git ~/.vim/bundle/vim-sensible
+  git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 fi
 if [ ! -d ~/.vim/bundle/vim-coffee-script ]; then
   git clone git://github.com/altercation/vim-coffee-script.git ~/.vim/bundle/vim-coffee-script
