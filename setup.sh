@@ -18,10 +18,20 @@ if [ ! -d ~/.vim/bundle/vim-sensible ]; then
   git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 fi
 if [ ! -d ~/.vim/bundle/vim-coffee-script ]; then
-  git clone git://github.com/altercation/vim-coffee-script.git ~/.vim/bundle/vim-coffee-script
+  git clone git://github.com/kchmck/vim-coffee-script.git ~/.vim/bundle/vim-coffee-script
 fi
 if [ ! -d ~/.vim/bundle/vim-colors-solarized ]; then
   git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
+fi
+
+if [ ! -d ~/Library/Vim/backup ]; then
+  mkdir -p ~/Library/Vim/backup
+fi
+if [ ! -d ~/Library/Vim/undo ]; then
+  mkdir -p ~/Library/Vim/undo
+fi
+if [ ! -d ~/Library/Vim/swap ]; then
+  mkdir -p ~/Library/Vim/swap
 fi
 
 cp -i .vimrc ~
